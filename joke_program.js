@@ -57,8 +57,11 @@ const fullJoke = function(){
             let random_date = date_list[Math.floor(Math.random())* date_list.length];
 
             return random_date;
+        },
+        message: function(){
+            console.log(`"${this.joke}"- ${this.author}, ${this.date}`);
         }
     }
 }
 
-console.log(fullJoke())
+console.log(fullJoke().message())
