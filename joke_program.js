@@ -14,7 +14,7 @@ const fullJoke = function(){
                 "I told my computer I needed a break, and it froze."
             ];
 
-            let random_joke =  joke_list[Math.floor(Math.random())* joke_list.length];
+            let random_joke =  joke_list[Math.floor(Math.random()* joke_list.length)];
 
             return random_joke;
 
@@ -34,7 +34,7 @@ const fullJoke = function(){
                 "J.K. Rowling",
                 "Dr. Seuss",
             ]
-            let random_author = author_list[Math.floor(Math.random())* author_list.length];
+            let random_author = author_list[Math.floor(Math.random()* author_list.length)];
 
             return random_author;
 
@@ -54,7 +54,7 @@ const fullJoke = function(){
             ];
 
             
-            let random_date = date_list[Math.floor(Math.random())* date_list.length];
+            let random_date = date_list[Math.floor(Math.random()* date_list.length)];
 
             return random_date;
         },
