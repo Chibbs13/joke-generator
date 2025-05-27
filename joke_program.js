@@ -59,9 +59,9 @@ const fullJoke = function(){
             return random_date;
         },
         message: function(){
-            console.log(`"${this.joke}"- ${this.author}, ${this.date}`);
+            console.log(`"${this.joke()}"- ${this.author()}, ${this.date()}`);
         }
     }
 }
 
-console.log(fullJoke().message())
+fullJoke().message()
