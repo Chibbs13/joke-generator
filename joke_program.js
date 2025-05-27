@@ -1,6 +1,8 @@
+//Joke factory function
 const fullJoke = function(){
     return {
         joke: function(){
+            //Get random joke 
             const joke_list = [
                 "I told my wife she was drawing her eyebrows too high. She looked surprised.",
                 "Why don’t skeletons fight each other? They don’t have the guts.",
@@ -22,6 +24,7 @@ const fullJoke = function(){
 
         },
         author: function(){
+            //Get random author
             const author_list = [
                 "Mark Twain",
                 "Jane Austen",
@@ -40,6 +43,7 @@ const fullJoke = function(){
 
         },
         date: function(){
+            //Get random date
             const date_list = [
                 "March 5, 2021",
                 "June 12, 2023",
@@ -59,6 +63,7 @@ const fullJoke = function(){
             return random_date;
         },
         message: function(){
+            //Combine them all
             console.log(`"${this.joke()}"- ${this.author()}, ${this.date()}`);
         }
     }
